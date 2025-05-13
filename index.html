@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APHG‑Argentina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="globeViz" style="width:100%;height:100vh;"></div>
+  <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl"></script>
+  <script>
+    Globe()
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-day.jpg')
+      .onGlobeReady(()=>
+        globe.pointOfView({ lat: -34.6, lng: -58.38, altitude: 0.5 }, 4000)
+      )
+      .render()
+      .appendTo(document.getElementById('globeViz'));
+    setTimeout(()=>document.getElementById('globeViz').style.display='none',5000);
+  </script>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">APHG‑Argentina</h1>
+      <!-- Your Argentina content goes here -->
+    </div>
+  </section>
+</body>
+</html>
