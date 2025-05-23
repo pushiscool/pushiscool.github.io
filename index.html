@@ -1,25 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>APHG‑Argentina</title>
-  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Earth → Salta Units 1‑3</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div id="globeViz" style="width:100%;height:100vh"></div>
-  <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/globe.gl"></script>
-  <script>
-    const globe = Globe()
-      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-day.jpg')
-      .onGlobeReady(()=>globe.pointOfView({lat:-34.6,lng:-58.38,altitude:0.5},4000));
-    document.getElementById('globeViz').append(globe);
-    setTimeout(()=>document.getElementById('globeViz').style.display='none',5000);
-  </script>
-  <section class="section"><div class="container">
-    <h1 class="title">APHG‑Argentina</h1>
-    <!-- your content -->
-  </div></section>
+  <header>
+    <a href="#" id="nav-home" class="nav-link">Home</a>
+    <a href="#" id="nav-work" class="nav-link">Work Cited</a>
+  </header>
+
+  <div id="hero">
+    <div class="marker marker1" data-unit="Unit 1"><div class="marker-inner"></div></div>
+    <div class="marker marker2" data-unit="Unit 2"><div class="marker-inner"></div></div>
+    <div class="marker marker3" data-unit="Unit 3"><div class="marker-inner"></div></div>
+  </div>
+
+  <main id="content">
+    <!-- ───────── UNIT 1 ───────── -->
+    <div id="unit1" class="unit">
+      <h1 class="unit-title">Unit 1 – Thinking Geographically & Development</h1>
+
+      <section class="panel left">
+        <div class="text">
+          <h2>Introducing Argentina</h2>
+          <p>Argentina or Argentine Republic lies in South America’s southern cone between the Andes and Atlantic. Major toponyms include Buenos Aires, Córdoba, Rosario, Mendoza, and Salta. Sites range from fertile Pampas to Andean peaks and sub‑Antarctic glaciers.</p>
+        </div>
+        <div class="image"><img src="assets/World-Data-Locator-Map-Argentina.webp" alt="Locator Map"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/Map_of_Argentina_with_provinces.svg.png" alt="Provinces"/></div>
+        <div class="text">
+          <h2>Divisions</h2>
+          <p>Argentina has 23 provinces plus the autonomous city of Buenos Aires. Provinces group into Pampas, Northwest, Mesopotamia, Cuyo, and Patagonia regions.</p>
+        </div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>Choropleth Map</h2><p>Population‑density choropleth highlights dense Buenos Aires Province and sparsely populated Patagonia.</p></div>
+        <div class="image"><img src="assets/Population_density_by_municipality_in_Argentina,_2022.svg.png" alt="Choropleth"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/Grid_WPA_arg_2010.png" alt="Cartogram"/></div>
+        <div class="text"><h2>Cartogram</h2><p>Provinces inflate with adolescent health coverage; Buenos Aires swells while poorer northern provinces shrink.</p></div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>Proportional Symbol Map</h2><p>Circle size marks adolescents meeting health benchmarks; largest circles cluster in Buenos Aires and Córdoba.</p></div>
+        <div class="image"><img src="assets/download.jpeg" alt="Proportional Symbol"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/images.jpeg" alt="Dot Density"/></div>
+        <div class="text"><h2>Dot Density Map</h2><p>Dots mark service cohorts—dense near Rosario, sparse across Patagonia.</p></div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>Environmental Determinism</h2><p>Pampas grasslands foster cattle culture and leatherwear, Andean altiplano promotes adobe housing and quinoa dishes, while cold Patagonia favors wool garments.</p></div>
+        <div class="image"><img src="assets/JRC_crops_fields-6220-768x482.jpg" alt="Fields"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/250px-Mean_annual_precipitation_map_atlas_climatico_digit..png" alt="Irrigation"/></div>
+        <div class="text"><h2>Possibilism Example</h2><p>Irrigation canals and railways transformed the Pampas into a grain powerhouse, illustrating human modification of landscape.</p></div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>World Systems Theory</h2><p>Wallerstein classifies Argentina as semi‑periphery: partly industrial, still commodity‑dependent.</p></div>
+        <div class="image"><img src="assets/world-systems-map.png" alt="World Systems"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/metrics-chart.png" alt="Metrics"/></div>
+        <div class="text"><h2>Key Metrics</h2><p>GDP $612 B, GNI $9 k, Gini 40.7, Literacy 99 %, HDI 0.865, Life expectancy 78.6 y.</p></div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>Gender Inequality</h2><p>GII 0.287 (rank 69). Women hold 43 % of parliamentary seats.</p></div>
+        <div class="image"><img src="assets/gii-chart.png" alt="GII"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/rostow-stages.png" alt="Rostow"/></div>
+        <div class="text"><h2>Rostow Stage</h2><p>Argentina fits “Drive to Maturity”: diversified industries, expanding services, shrinking farm share.</p></div>
+      </section>
+    </div>
+
+    <!-- ───────── UNIT 2 ───────── -->
+    <div id="unit2" class="unit">
+      <h1 class="unit-title">Unit 2 – Population & Migration</h1>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/argentina_population_density.png" alt="Density"/></div>
+        <div class="text"><h2>Population & Density</h2><p>Population 45 851 378 (2025). Arithmetic 17/km², Physiological 142/km², Agricultural 7 farmers/km² arable.</p></div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>Vital Rates</h2><p>CBR 10.7 ‰, CDR 8.6 ‰, NIR 2.1 ‰, IMR 8.4 ‰, TFR 1.36.</p></div>
+        <div class="image"><img src="assets/argentina_vital_rates.png" alt="Vital Rates"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/argentina_population_pyramid.png" alt="Population Pyramid"/></div>
+        <div class="text"><h2>Population Pyramid</h2><p>Slow‑growth pyramid reveals ageing society and stable workforce.</p></div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>Demographic Transition</h2><p>Stage 4: low births and deaths, long life expectancy.</p></div>
+        <div class="image"><img src="assets/demographic_transition_model.png" alt="DTM"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/argentina_migration_flow.png" alt="Migration"/></div>
+        <div class="text"><h2>Migration Profile</h2><p>Immigrants 1.4 M, Emigrants 580 K, Net migration –0.08 ‰.</p></div>
+      </section>
+
+      <!-- Push & Pull panel WITHOUT image -->
+      <section class="panel left">
+        <div class="text">
+          <h2>Push & Pull Factors</h2>
+          <p>Push influences include persistent inflation, currency volatility, and limited skilled‑job creation. Pull factors involve higher wages, currency stability, and broader career paths in destinations such as Spain and the United States. Combined, they produce modest net out‑migration.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ───────── UNIT 3 ───────── -->
+    <div id="unit3" class="unit">
+      <h1 class="unit-title">Unit 3 – Culture</h1>
+
+      <section class="panel left">
+        <div class="text"><h2>Folk Culture</h2><p>Empanadas, mate, bombachas trousers, tango dance, pato sport, and adobe estancias embody folk traditions.</p></div>
+        <div class="image"><img src="assets/empanadas_folk_food.jpg" alt="Empanadas"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/la_bombonera_pop_culture.jpg" alt="Football"/></div>
+        <div class="text"><h2>Pop Culture</h2><p>Football fandom around Boca Juniors and Lionel Messi demonstrates global pop influence.</p></div>
+      </section>
+
+      <section class="panel left">
+        <div class="text"><h2>Language</h2><p>Spanish—Indo‑European family, Romance branch, Castilian group—diffused via colonial relocation; Rioplatense dialect emerged locally.</p></div>
+        <div class="image"><img src="assets/spanish_language_family.jpg" alt="Language"/></div>
+      </section>
+
+      <section class="panel right">
+        <div class="image"><img src="assets/argentina_religion_chart.png" alt="Religion"/></div>
+        <div class="text"><h2>Religion</h2><p>Roman Catholic 68 %, Evangelical 17 %, other 15 %.</p></div>
+      </section>
+    </div>
+
+    <!-- ───────── WORK CITED ───────── -->
+    <section id="work-cited" class="panel cited">
+      <ul>
+        <li>https://www.cia.gov/the-world-factbook/countries/argentina/</li>
+        <li>https://www.worldometers.info/world-population/argentina-population/</li>
+        <li>https://www.prb.org/international/indicator/birth-rate?country=ARG</li>
+        <li>https://populationpyramid.net/argentina/2024/</li>
+        <li>https://hdr.undp.org/data-center/thematic-composite-indices/gender-inequality-index</li>
+        <li>https://migrationdataportal.org</li>
+        <li>https://www.pewresearch.org/religion/2014/11/13/religion-in-latin-america/</li>
+        <li>https://commons.wikimedia.org/wiki/File:Map_of_Argentina_with_provinces.svg</li>
+        <li>https://commons.wikimedia.org/wiki/File:Population_density_by_municipality_in_Argentina,_2022.svg</li>
+        <li>https://commons.wikimedia.org/wiki/File:Empanadas_salte%C3%B1as.jpg</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
